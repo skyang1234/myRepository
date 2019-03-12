@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<style>
+		body{
+			margin: 0;
+			background: #000;
+			overflow: hidden;   /*隐藏滚动条*/
+		}
+		#main{
+			perspective: 800px;    		/* 设置景深 */
+		}
+		#pic{
+			position: relative;
+			margin: 200px auto;
+			width: 200px;
+			height: 200px;
+			transform-style: preserve-3d; /*设置3D场景风格*/
+			transform: rotateX(-20deg) rotateY(0deg); /*旋转的度数  rotateX:沿着X轴旋转,rotateY:沿着Y轴旋转  deg为度数的单位*/
+		}
+		#pic img{
+			position: absolute;
+			width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="pic" ondragstart="return false">
+			<img src="img/1.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/3.jpg" alt="">
+			<img src="img/4.jpg" alt="">
+			<img src="img/5.jpg" alt="">
+			<img src="img/6.jpg" alt="">
+			<img src="img/7.jpg" alt="">
+			<img src="img/8.jpg" alt="">
+			<img src="img/9.jpg" alt="">
+			<img src="img/10.jpg" alt="">
+			<img src="img/11.jpg" alt="">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
